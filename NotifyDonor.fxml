@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="582.0" prefWidth="797.0" style="-fx-background-color: #FFEBEB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.NotifyDonor">
+   <children>
+      <Text layoutX="170.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Blood Type" wrappingWidth="182.0">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="bloodtypeTextField" layoutX="361.0" layoutY="246.0" prefHeight="35.0" prefWidth="182.0" promptText="Blood Type" />
+      <Button fx:id="UpdateButton" layoutX="405.0" layoutY="338.0" mnemonicParsing="false" onAction="#onShowResult" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #ae0000;" text="Notify" textFill="WHITE" />
+      <DatePicker fx:id="datePicker" layoutX="345.0" layoutY="156.0" prefHeight="35.0" prefWidth="206.0" promptText="11-02-2023" />
+       <ImageView fitHeight="358.0" fitWidth="331.0" layoutX="-52.0" layoutY="-55.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@Image6.png" />
+           </image>
+       </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="633.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+              <Image url="@LaalDil2.png" />
+              </image>
+      </ImageView>
+      <Button fx:id="p5" layoutX="713.0" layoutY="39.0" mnemonicParsing="false" onAction="#p6" style="-fx-background-color: #ae0000; -fx-background-radius: 30;" text="&lt;--" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="573.0" prefWidth="797.0" style="-fx-background-color: #FFEBEB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.DonorProfile">
+   <children>
+      <ImageView fitHeight="155.0" fitWidth="101.0" layoutX="150.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LaalDil1.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="profilePane" layoutX="359.0" layoutY="173.0" prefHeight="246.0" prefWidth="284.0">
+         <children>
+            <Label layoutX="14.0" layoutY="24.0" text="Name" />
+            <Label layoutX="14.0" layoutY="57.0" text="Age" />
+            <Label layoutX="14.0" layoutY="89.0" text="Email" />
+            <Label layoutX="14.0" layoutY="123.0" text="Contact" />
+            <Label layoutX="14.0" layoutY="155.0" text="Address" />
+            <Label layoutX="14.0" layoutY="183.0" text="Blood Group" />
+            <Label layoutX="14.0" layoutY="215.0" text="Password" />
+            <TextField fx:id="nameTextField" layoutX="96.0" layoutY="20.0" />
+            <TextField fx:id="ageTextField" layoutX="96.0" layoutY="53.0" />
+            <TextField fx:id="emailTextField" layoutX="96.0" layoutY="85.0" />
+            <TextField fx:id="contactTextField" layoutX="96.0" layoutY="119.0" />
+            <TextField fx:id="addressTextField" layoutX="96.0" layoutY="151.0" />
+            <TextField fx:id="bloodgroupTextField" layoutX="96.0" layoutY="179.0" />
+            <TextField fx:id="passwordTextField" layoutX="96.0" layoutY="211.0" />
+         </children>
+      </Pane>
+      <AnchorPane layoutY="-14.0" prefHeight="592.0" prefWidth="200.0" style="-fx-background-color: #ae0000;">
+         <children>
+            <Button fx:id="profileButton" layoutX="64.0" layoutY="48.0" mnemonicParsing="false" onAction="#onProfileButtonClick" style="-fx-background-color: #ae0000;" text="Porfile" textFill="WHITE" />
+            <Button fx:id="appointmentButton" layoutX="35.0" layoutY="120.0" mnemonicParsing="false" style="-fx-background-color: #ae0000;" text="Book Appointment" textFill="#f2f2f2" />
+            <Button fx:id="donationHistoryButton" layoutX="40.0" layoutY="188.0" mnemonicParsing="false" style="-fx-background-color: #ae0000;" text="Donation History" textFill="WHITE" />
+            <Button fx:id="notificationsButton" layoutX="47.0" layoutY="261.0" mnemonicParsing="false" onAction="#onnotificationsButtonClicked" style="-fx-background-color: #ae0000;" text="Notifications" textFill="WHITE" />
+            <Button fx:id="BloodDonateButton" layoutX="45.0" layoutY="329.0" mnemonicParsing="false" onAction="#onBloodDonateButtonClicked" style="-fx-background-color: #ae0000;" text="Donate Blood" textFill="WHITE" />
+
+         </children>
+      </AnchorPane>
+      <AmbientLight color="CHARTREUSE" layoutX="349.0" layoutY="48.0" lightOn="true" />
+      <PointLight color="CHARTREUSE" layoutX="242.0" layoutY="102.0" lightOn="true" />
+      <Label fx:id="showNotificationMsg" layoutX="267.0" layoutY="144.0" text="Label" />
+      <ImageView fitHeight="237.0" fitWidth="158.0" layoutX="210.0" layoutY="-92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LaalDil1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="246.0" fitWidth="158.0" layoutX="643.0" layoutY="-80.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@LaalDil1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="126.0" fitWidth="75.0" layoutX="722.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LaalDil2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="p1" layoutX="719.0" layoutY="74.0" mnemonicParsing="false" onAction="#p2" style="-fx-background-color: #ae0000; -fx-background-radius: 30;" text="&lt;--" textFill="WHITE" />
+   </children>
+</AnchorPane>

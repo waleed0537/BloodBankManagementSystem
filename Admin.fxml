@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="582.0" prefWidth="971.0" style="-fx-background-color: #FFEBEB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.Admin">
+   <children>
+      <AnchorPane fx:id="showTables2" layoutX="614.0" layoutY="109.0" prefHeight="364.0" prefWidth="346.0" />
+      <ImageView fitHeight="155.0" fitWidth="101.0" layoutX="150.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LaalDil1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="582.0" prefWidth="200.0" style="-fx-background-color: #ae0000;">
+         <children>
+            <Button fx:id="searchDonorButton" layoutX="40.0" layoutY="93.0" mnemonicParsing="false" onAction="#onsearchdonorButtonClicked" style="-fx-background-color: #ae0000;" text="Search for donors" textFill="WHITE" />
+            <Button fx:id="manageBloodButton" layoutX="24.0" layoutY="198.0" mnemonicParsing="false" onAction="#onManageInventoryButtonClicked" style="-fx-background-color: #ae0000;" text="Manage Blood Inventory" textFill="WHITE" />
+            <Button fx:id="notifyDonorButton" layoutX="56.0" layoutY="302.0" mnemonicParsing="false" onAction="#onNotifyDonorButtonClicked" style="-fx-background-color: #ae0000;" text="Notify Donor" textFill="#e8e8e8" />
+            <Button fx:id="manageBloodDrive" layoutX="56.0" layoutY="395.0" mnemonicParsing="false" onAction="#onManageBloodDriveClicked" style="-fx-background-color: #ae0000;" text="Blood Drive" textFill="WHITE" />
+            <Button fx:id="bloodTransfusionButton" layoutX="55.0" layoutY="473.0" mnemonicParsing="false" onAction="#onBloodTransfusionButtonClicked" style="-fx-background-color: #ae0000;" text="Transfusion" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="237.0" fitWidth="158.0" layoutX="200.0" layoutY="-102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LaalDil1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="246.0" fitWidth="158.0" layoutX="622.0" layoutY="-102.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@LaalDil1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="126.0" fitWidth="75.0" layoutX="712.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LaalDil2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="A1Label" layoutX="282.0" layoutY="174.0" text="Label" />
+      <Label fx:id="A2Label" layoutX="282.0" layoutY="209.0" text="Label" />
+      <Label fx:id="B1Label" layoutX="282.0" layoutY="241.0" text="Label" />
+      <Label fx:id="B2Label" layoutX="282.0" layoutY="273.0" text="Label" />
+      <Label fx:id="AB1Label" layoutX="282.0" layoutY="307.0" text="Label" />
+      <Label fx:id="AB2Label" layoutX="282.0" layoutY="341.0" text="Label" />
+      <Label fx:id="O1Label" layoutX="282.0" layoutY="371.0" text="Label" />
+      <Label fx:id="O2Label" layoutX="282.0" layoutY="403.0" text="Label" />
+      <RadioButton fx:id="YesButton" layoutX="357.0" layoutY="458.0" mnemonicParsing="false" text="Yes" />
+      <RadioButton fx:id="NoButton" layoutX="432.0" layoutY="458.0" mnemonicParsing="false" text="No" />
+      <Label fx:id="sawalLabel" layoutX="357.0" layoutY="430.0" text="Want to update the inventory?" />
+      <AnchorPane fx:id="bloodGroupPane" layoutX="550.0" layoutY="142.0" prefHeight="299.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="28.0" layoutY="44.0" text="A+" />
+            <Label layoutX="30.0" layoutY="70.0" text="A-" />
+            <Label layoutX="32.0" layoutY="97.0" text="B+" />
+            <Label layoutX="30.0" layoutY="123.0" text="B-" />
+            <Label layoutX="27.0" layoutY="147.0" text="AB+" />
+            <Label layoutX="29.0" layoutY="173.0" text="AB-" />
+            <Label layoutX="31.0" layoutY="199.0" text="O+" />
+            <Label layoutX="34.0" layoutY="224.0" text="O-" />
+            <TextField fx:id="A1textField" layoutX="81.0" layoutY="27.0" prefHeight="18.0" prefWidth="39.0" />
+            <TextField fx:id="A2textField" layoutX="81.0" layoutY="53.0" prefHeight="18.0" prefWidth="39.0" />
+            <TextField fx:id="B1textField" layoutX="81.0" layoutY="79.0" prefHeight="18.0" prefWidth="39.0" />
+            <TextField fx:id="B2textField" layoutX="81.0" layoutY="106.0" prefHeight="18.0" prefWidth="39.0" />
+            <TextField fx:id="AB1textField" layoutX="81.0" layoutY="132.0" prefHeight="18.0" prefWidth="39.0" />
+            <TextField fx:id="AB2textField" layoutX="81.0" layoutY="156.0" prefHeight="18.0" prefWidth="39.0" />
+            <TextField fx:id="O1textField" layoutX="81.0" layoutY="182.0" prefHeight="18.0" prefWidth="39.0" />
+            <TextField fx:id="O2textField" layoutX="81.0" layoutY="211.0" prefHeight="18.0" prefWidth="39.0" />
+            <Button fx:id="updateBloodInventory" layoutX="64.0" layoutY="269.0" mnemonicParsing="false" onAction="#onupdateBloodInventoryButtonClicked" style="-fx-background-color: #ae0000;" text="Update" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="ADMINBACK" layoutX="712.0" layoutY="50.0" mnemonicParsing="false" onAction="#ADMINBACKCLICKED" style="-fx-background-color: #ae0000; -fx-background-radius: 30;" text="&lt;--" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="582.0" prefWidth="797.0" style="-fx-background-color: #FFEBEB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.Register">
+   <children>
+      <Text layoutX="59.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Donor Registeration Form" underline="true" wrappingWidth="753.591796875">
+         <font>
+            <Font name="System Italic" size="40.0" />
+         </font></Text>
+      <AnchorPane layoutX="241.0" layoutY="90.0" prefHeight="420.0" prefWidth="289.0">
+         <children>
+            <TextField fx:id="donorName" layoutX="96.0" promptText="name" />
+            <Label layoutY="12.0" text="Name" />
+            <Label layoutY="54.0" text="Age" />
+            <Label layoutY="99.0" text="Email" />
+            <Label layoutY="147.0" text="Contact" />
+            <Label layoutY="192.0" text="Address" />
+            <Label layoutY="238.0" text="Blood Type" />
+            <TextField fx:id="donorAge" layoutX="96.0" layoutY="50.0" promptText="age" />
+            <TextField fx:id="donorEmail" layoutX="96.0" layoutY="95.0" promptText="xyz@gmail.com" />
+            <TextField fx:id="donorContact" layoutX="96.0" layoutY="143.0" promptText="+923127892252" />
+            <TextField fx:id="donorAddress" layoutX="96.0" layoutY="188.0" promptText="Fast Nuces, Islamabad" />
+            <TextField fx:id="donorBloodGroup" layoutX="96.0" layoutY="234.0" promptText="A+" />
+            <Button fx:id="donorSignUp" layoutX="116.0" layoutY="339.0" mnemonicParsing="false" onAction="#onClickDonorSignUpButton" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #ae0000;" text="Sign up" textFill="WHITE" />
+            <Label fx:id="labelSignUp" layoutX="259.0" layoutY="285.0" />
+            <Label layoutY="294.0" text="Password" />
+            <TextField fx:id="donorPassword" layoutX="96.0" layoutY="290.0" promptText="Password" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
